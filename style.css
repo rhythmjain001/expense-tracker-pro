@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(
+        135deg,
+        #1a0b3d,
+        #3a1c71,
+        #d76d77
+    );
+    padding:20px;
+}
+
+.container{
+    width:600px;
+    max-width:100%;
+
+    background:rgba(255,255,255,0.1);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    border-radius:30px;
+
+    padding:30px;
+
+    color:white;
+
+    box-shadow:0 20px 40px rgba(0,0,0,0.3);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:2.3rem;
+}
+
+.balance{
+    background:rgba(255,255,255,0.1);
+
+    padding:25px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    margin-bottom:20px;
+}
+
+.balance h3{
+    font-size:42px;
+    margin-top:10px;
+}
+
+.summary{
+    display:flex;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.card{
+    flex:1;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    color:white;
+}
+
+.income-card{
+    background:linear-gradient(
+        135deg,
+        #00c853,
+        #64dd17
+    );
+}
+
+.expense-card{
+    background:linear-gradient(
+        135deg,
+        #ff1744,
+        #ff5252
+    );
+}
+
+.card p{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.form{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    margin-bottom:20px;
+}
+
+input,
+select{
+    padding:15px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,0.15);
+
+    color:white;
+
+    font-size:16px;
+}
+
+input::placeholder{
+    color:#ddd;
+}
+
+select option{
+    color:black;
+}
+
+button{
+    padding:15px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:linear-gradient(
+        135deg,
+        #8e2de2,
+        #4a00e0
+    );
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+}
+
+.chart-container{
+    background:rgba(255,255,255,0.08);
+
+    padding:15px;
+
+    border-radius:20px;
+
+    margin-bottom:20px;
+}
+
+ul{
+    list-style:none;
+}
+
+li{
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px;
+
+    margin-bottom:10px;
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,0.08);
+}
+
+.transaction-info{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.badge{
+    padding:5px 10px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    background:#6c63ff;
+}
+
+.delete-btn{
+    background:#ff1744;
+    padding:8px 12px;
+}
+
+.dark{
+    background:#0f0f0f;
+}
+
+.dark .container{
+    background:rgba(20,20,20,0.8);
+}
+
+@media(max-width:600px){
+
+    .summary{
+        flex-direction:column;
+    }
+
+    h1{
+        font-size:1.8rem;
+    }
+
+    .balance h3{
+        font-size:32px;
+    }
+}
